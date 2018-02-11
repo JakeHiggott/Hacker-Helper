@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07C5AC8D202FE2B400396D19 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C5AC8C202FE2B400396D19 /* TabBarViewController.swift */; };
+		07C5AC91202FE9B900396D19 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C5AC90202FE9B900396D19 /* NotesViewController.swift */; };
 		9EC6DDC6202F789E00E35E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6DDC5202F789E00E35E43 /* AppDelegate.swift */; };
 		9EC6DDC8202F789E00E35E43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6DDC7202F789E00E35E43 /* ViewController.swift */; };
 		9EC6DDCB202F789E00E35E43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC6DDC9202F789E00E35E43 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07C5AC8C202FE2B400396D19 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		07C5AC90202FE9B900396D19 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		9EC6DDC2202F789E00E35E43 /* derbyHacksHackerHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = derbyHacksHackerHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC6DDC5202F789E00E35E43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EC6DDC7202F789E00E35E43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				9EC6DDC5202F789E00E35E43 /* AppDelegate.swift */,
+				07C5AC8C202FE2B400396D19 /* TabBarViewController.swift */,
 				9EC6DDC7202F789E00E35E43 /* ViewController.swift */,
 				9EC6DDC9202F789E00E35E43 /* Main.storyboard */,
 				9EC6DDCC202F789E00E35E43 /* Assets.xcassets */,
 				9EC6DDCE202F789E00E35E43 /* LaunchScreen.storyboard */,
 				9EC6DDD1202F789E00E35E43 /* Info.plist */,
+				07C5AC90202FE9B900396D19 /* NotesViewController.swift */,
 			);
 			path = derbyHacksHackerHelper;
 			sourceTree = "<group>";
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07C5AC91202FE9B900396D19 /* NotesViewController.swift in Sources */,
 				9EC6DDC8202F789E00E35E43 /* ViewController.swift in Sources */,
+				07C5AC8D202FE2B400396D19 /* TabBarViewController.swift in Sources */,
 				9EC6DDC6202F789E00E35E43 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
