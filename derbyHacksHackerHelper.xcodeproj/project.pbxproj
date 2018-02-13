@@ -16,6 +16,10 @@
 		9EC6DDD0202F789E00E35E43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC6DDCE202F789E00E35E43 /* LaunchScreen.storyboard */; };
 		9EC6DDDB202F789E00E35E43 /* derbyHacksHackerHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6DDDA202F789E00E35E43 /* derbyHacksHackerHelperTests.swift */; };
 		9EC6DDE6202F789E00E35E43 /* derbyHacksHackerHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6DDE5202F789E00E35E43 /* derbyHacksHackerHelperUITests.swift */; };
+		9EC6DDF620301B9C00E35E43 /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6DDF520301B9C00E35E43 /* NoteDetailViewController.swift */; };
+		9ECE85BC20301D6500ADDCF2 /* TasksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECE85BB20301D6500ADDCF2 /* TasksManager.swift */; };
+		9ECE85BE20301D6C00ADDCF2 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECE85BD20301D6C00ADDCF2 /* Task.swift */; };
+		9ECE85C02030398500ADDCF2 /* CreateNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECE85BF2030398500ADDCF2 /* CreateNoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		9EC6DDE1202F789E00E35E43 /* derbyHacksHackerHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = derbyHacksHackerHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC6DDE5202F789E00E35E43 /* derbyHacksHackerHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = derbyHacksHackerHelperUITests.swift; sourceTree = "<group>"; };
 		9EC6DDE7202F789E00E35E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EC6DDF520301B9C00E35E43 /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
+		9ECE85BB20301D6500ADDCF2 /* TasksManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksManager.swift; sourceTree = "<group>"; };
+		9ECE85BD20301D6C00ADDCF2 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		9ECE85BF2030398500ADDCF2 /* CreateNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +109,18 @@
 		9EC6DDC4202F789E00E35E43 /* derbyHacksHackerHelper */ = {
 			isa = PBXGroup;
 			children = (
-				9EC6DDC5202F789E00E35E43 /* AppDelegate.swift */,
+				9ECE85BB20301D6500ADDCF2 /* TasksManager.swift */,
+				9ECE85BD20301D6C00ADDCF2 /* Task.swift */,
 				07C5AC8C202FE2B400396D19 /* TabBarViewController.swift */,
+				07C5AC90202FE9B900396D19 /* NotesViewController.swift */,
+				9EC6DDF520301B9C00E35E43 /* NoteDetailViewController.swift */,
 				9EC6DDC7202F789E00E35E43 /* ViewController.swift */,
+				9ECE85BF2030398500ADDCF2 /* CreateNoteViewController.swift */,
 				9EC6DDC9202F789E00E35E43 /* Main.storyboard */,
 				9EC6DDCC202F789E00E35E43 /* Assets.xcassets */,
 				9EC6DDCE202F789E00E35E43 /* LaunchScreen.storyboard */,
 				9EC6DDD1202F789E00E35E43 /* Info.plist */,
-				07C5AC90202FE9B900396D19 /* NotesViewController.swift */,
+				9EC6DDC5202F789E00E35E43 /* AppDelegate.swift */,
 			);
 			path = derbyHacksHackerHelper;
 			sourceTree = "<group>";
@@ -265,10 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ECE85BE20301D6C00ADDCF2 /* Task.swift in Sources */,
 				07C5AC91202FE9B900396D19 /* NotesViewController.swift in Sources */,
+				9ECE85C02030398500ADDCF2 /* CreateNoteViewController.swift in Sources */,
+				9ECE85BC20301D6500ADDCF2 /* TasksManager.swift in Sources */,
 				9EC6DDC8202F789E00E35E43 /* ViewController.swift in Sources */,
 				07C5AC8D202FE2B400396D19 /* TabBarViewController.swift in Sources */,
 				9EC6DDC6202F789E00E35E43 /* AppDelegate.swift in Sources */,
+				9EC6DDF620301B9C00E35E43 /* NoteDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4F6XAUD74;
 				INFOPLIST_FILE = derbyHacksHackerHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jake-Higgott.derbyHacksHackerHelper";
@@ -449,6 +466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4F6XAUD74;
 				INFOPLIST_FILE = derbyHacksHackerHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jake-Higgott.derbyHacksHackerHelper";

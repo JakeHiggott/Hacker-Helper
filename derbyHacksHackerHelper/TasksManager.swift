@@ -7,3 +7,25 @@
 //
 
 import Foundation
+
+class TaskManager {
+    
+    var tasks = [
+        Task(thing: "Add Todo lists here", color: .blue),
+        
+        
+    ]
+    
+    static let sharedInstance = TaskManager()
+    
+    
+    func createTestData() {
+        tasks = [
+            Task(thing: "walk dog", color: .blue),
+            Task(thing: "walk cat", color: .green),
+            Task(thing: "eat dinner", color: .yellow),
+            Task(thing: "have good time", color: .red)
+        ]
+    }
+
+}

@@ -6,4 +6,16 @@
 //  Copyright © 2018 Jake Higgott. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class NoteDetailViewController: UIViewController {
+    
+    @IBOutlet weak var noteThingLabel: UILabel!
+ 
+    func configure(for task: Task) {
+        noteThingLabel?.text = task.thing
+        self.view?.backgroundColor = task.color
+    }
+}
+
+

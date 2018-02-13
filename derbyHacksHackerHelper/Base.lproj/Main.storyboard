@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZUb-ce-mMe">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,11 +17,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="derbyHacksHackerHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Baz-SO-yAz">
-                                <rect key="frame" x="133.66666666666666" y="315" width="108" height="182"/>
+                                <rect key="frame" x="133.5" y="242.5" width="108" height="182"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGN-ld-eLE">
                                         <rect key="frame" x="0.0" y="0.0" width="108" height="50"/>
@@ -70,7 +71,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Derby Hacks 3 - 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxw-8m-Csd">
-                                <rect key="frame" x="94.666666666666686" y="589.66666666666663" width="186" height="79"/>
+                                <rect key="frame" x="94.5" y="517" width="186" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="gxw-8m-Csd" secondAttribute="height" multiplier="186:79" id="fot-ik-7me"/>
                                 </constraints>
@@ -79,13 +80,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Study" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CZ-Mr-frE">
-                                <rect key="frame" x="153.33333333333334" y="44" width="68.333333333333343" height="32.333333333333343"/>
+                                <rect key="frame" x="153.5" y="20" width="68.5" height="32.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PM5-bH-oW9">
-                                <rect key="frame" x="56.666666666666657" y="100.33333333333331" width="262" height="119.66666666666669"/>
+                                <rect key="frame" x="56.5" y="76.5" width="262" height="119.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -117,42 +118,6 @@
             </objects>
             <point key="canvasLocation" x="276" y="71"/>
         </scene>
-        <!--Notes-->
-        <scene sceneID="s7H-ap-sLo">
-            <objects>
-                <viewController id="7Bp-8Z-I5f" customClass="NotesViewController" customModule="derbyHacksHackerHelper" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="te1-7p-fTx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t3v-jW-ZNw">
-                                <rect key="frame" x="0.0" y="44" width="375" height="697"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="tEW-OR-I9t">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tEW-OR-I9t" id="d9z-Yl-IMH">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="6Xu-IC-0cX"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Notes" id="HJZ-r5-MZI"/>
-                    <connections>
-                        <outlet property="tableView" destination="t3v-jW-ZNw" id="lem-hL-pzl"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qbK-6x-CbF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="276" y="777"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hU6-Ag-4Jo">
             <objects>
@@ -164,12 +129,134 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="oUu-80-2k9"/>
-                        <segue destination="7Bp-8Z-I5f" kind="relationship" relationship="viewControllers" id="VSQ-8k-apE"/>
+                        <segue destination="SS6-Po-KGA" kind="relationship" relationship="viewControllers" id="D45-AX-Q3Y"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0K-Lm-emO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-555" y="363"/>
+        </scene>
+        <!--Notes-->
+        <scene sceneID="HwK-Mn-wZD">
+            <objects>
+                <viewController id="cpf-ec-5w1" customClass="NotesViewController" customModule="derbyHacksHackerHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Av6-Eg-oYx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qMl-E9-XH7">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotesCell" textLabel="ekL-JP-pF8" style="IBUITableViewCellStyleDefault" id="qHx-Yo-RD9">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qHx-Yo-RD9" id="ROP-X7-UIJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ekL-JP-pF8">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="cpf-ec-5w1" id="4tX-XD-uE2"/>
+                                    <outlet property="delegate" destination="cpf-ec-5w1" id="5Qy-ya-qFb"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qMl-E9-XH7" firstAttribute="top" secondItem="d0j-TQ-R6D" secondAttribute="top" id="3gT-e0-pVz"/>
+                            <constraint firstItem="qMl-E9-XH7" firstAttribute="leading" secondItem="d0j-TQ-R6D" secondAttribute="leading" id="aWO-h7-wJg"/>
+                            <constraint firstItem="d0j-TQ-R6D" firstAttribute="bottom" secondItem="qMl-E9-XH7" secondAttribute="bottom" id="gMh-Pw-gJj"/>
+                            <constraint firstItem="d0j-TQ-R6D" firstAttribute="trailing" secondItem="qMl-E9-XH7" secondAttribute="trailing" id="nu1-KW-dUb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d0j-TQ-R6D"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Notes" id="T9E-6S-6rp">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="WNJ-xQ-U38">
+                            <connections>
+                                <segue destination="udw-Y0-67m" kind="show" id="bIO-6M-wMm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="qMl-E9-XH7" id="MYr-un-W8R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jVF-Xd-lC5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1782" y="845"/>
+        </scene>
+        <!--Create Note-->
+        <scene sceneID="VtV-Ko-Fl0">
+            <objects>
+                <viewController title="Create Note" id="udw-Y0-67m" customClass="CreateNoteViewController" customModule="derbyHacksHackerHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TAi-3C-rF0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What is your Task?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zgv-US-lz8">
+                                <rect key="frame" x="46.5" y="326" width="281" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zgv-US-lz8" firstAttribute="centerX" secondItem="bNC-VF-JEl" secondAttribute="centerX" id="5SU-un-Dcm"/>
+                            <constraint firstItem="Zgv-US-lz8" firstAttribute="width" secondItem="TAi-3C-rF0" secondAttribute="width" multiplier="0.75" id="lHU-nw-cLL"/>
+                            <constraint firstItem="Zgv-US-lz8" firstAttribute="centerY" secondItem="bNC-VF-JEl" secondAttribute="centerY" id="lI5-VX-dw6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bNC-VF-JEl"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create Note" id="9IM-CE-PtG">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="ZI1-Rp-MTb">
+                            <connections>
+                                <action selector="cancelTapped:" destination="udw-Y0-67m" id="aJF-Z4-O0l"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="zas-Xm-2PS">
+                            <connections>
+                                <action selector="saveTapped:" destination="udw-Y0-67m" id="zws-PW-ub3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="taskTextField" destination="Zgv-US-lz8" id="2Gn-U3-WqO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TP1-P9-fSl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2668" y="391.75412293853077"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="oo5-Dy-2kp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SS6-Po-KGA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="yAj-hQ-eMi"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="baA-5e-Yfd">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cpf-ec-5w1" kind="relationship" relationship="rootViewController" id="cx2-hC-0Td"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hgk-nC-4v5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844.79999999999995" y="845.57721139430294"/>
         </scene>
     </scenes>
 </document>

@@ -9,43 +9,59 @@
 import UIKit
 
 class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     @IBOutlet weak var tableView: UITableView!
     
-    override func viewDidLoad() {
-        tableView.dataSource = self
-        tableView.dataSource = self
+    let taskManager = TaskManager.sharedInstance
     
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
+        return taskManager.tasks.count
+   
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as UITableViewCell!
-        cell?.textLabel?.text = "Test!"
-        return cell!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NotesCell", for: indexPath)
+        
+        let task = taskManager.tasks[indexPath.row]
+        
+        cell.textLabel?.text = task.thing
+        
+        return cell
     }
     
-   
-}
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "NoteDetailSegue",
+            let indexPath = tableView.indexPathForSelectedRow,
+            let viewController = segue.destination as? NoteDetailViewController
+            else { return }
+        
+        let task = TaskManager.sharedInstance.tasks[indexPath.row]
+        viewController.configure(for: task)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        tableView.reloadData()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        tableView.reloadData()
+    }
 
+func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    if editingStyle == .delete {
+        taskManager.tasks.remove(at: indexPath.row)
+        self.tableView.reloadData()
+    }
+   
     
     
+}
     
-    
-    
-    
-    
+}
 
 
